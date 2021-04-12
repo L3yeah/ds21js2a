@@ -14,11 +14,12 @@
 // -> input, preconditions, arguments
 // <- output, postconditions, result
 
+
+<script>
 //1. Fibonacci
 //   fibonacci(n)
 // -> n integer
 // <- the n first fibonacci elements
-<script>
 //Solucion sin funciones
 let num = prompt("Ingresa el numero de elementos de la serie de fibonacci que deseas ver");
 
