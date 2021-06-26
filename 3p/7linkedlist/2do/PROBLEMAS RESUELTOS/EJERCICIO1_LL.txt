@@ -1,0 +1,35 @@
+<script>
+//Lilia Trujillo 2A
+//Linked List Ejercicio 1
+var head;
+
+class Node {
+			constructor(val) {
+				this.data = val;
+				this.next = null;
+			}
+		}
+  
+function append(new_data){
+		var new_node = new Node(new_data);
+		if (head == null) {
+			head = new Node(new_data);
+			return;
+		}
+		new_node.next = null;
+		var last = head;
+		while (last.next != null)
+			last = last.next;
+
+		last.next = new_node;
+		return;
+}
+
+head = {"data":3,"next":{"data":2,"next":{"data":1,"next":{"data":9,"next":null}}}};
+  
+append(7);
+  
+console.log(head);
+  
+
+</script>

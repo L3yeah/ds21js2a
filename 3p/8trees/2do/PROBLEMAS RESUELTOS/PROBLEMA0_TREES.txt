@@ -1,0 +1,19 @@
+<script>
+//Lilia Trujillo 2A
+//Trees ejercicio 0
+class Node {
+	constructor(val) {
+		this.key = val;
+		this.left = null;
+		this.right = null;
+	}
+}
+
+let tree = null;
+		
+tree = new Node(0);
+tree.left = new Node(1);
+tree.right = new Node(2);
+
+console.log(tree);
+</script>

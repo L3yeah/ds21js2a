@@ -1,0 +1,11 @@
+<script>
+//Lilia Trujillo 2A
+//Problema 2
+//Method Splice: add and remove items from an array.
+
+let nums = [1,2,3,4,5,9,7],  pos=3, eliminar = nums.splice(pos, 1);
+    console.log(nums); 
+
+//al correrlo eliminará el 4 ya que está en la posición 3. 
+    
+</script>

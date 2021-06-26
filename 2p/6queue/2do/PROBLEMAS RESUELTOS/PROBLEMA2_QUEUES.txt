@@ -1,0 +1,42 @@
+<script>
+//Lilia Trujillo 2A
+//Ejercicio 2 Queue
+    let queueM = [];
+    let queueF = [];
+    let dancers = 
+        [{"name":'Lilia',"sex":'F'},
+         {"name":'Roberto',"sex":'M'},
+         {"name":'Maria',"sex":'F'},
+         {"name":'Juan',"sex":'M'},
+         {"name":'Lucia',"sex":'F'},
+         {"name":'Alberto',"sex":'M'},
+         {"name":'Sarahi',"sex":'F'},
+         {"name":'Alejandra',"sex":'F'},
+         {"name":'Pedro',"sex":'M'},
+         {"name":'Gerardo',"sex":'M'},
+         {"name":'Alma',"sex":'F'}];
+    
+  let lgt = dancers.length;
+  
+    for(i=0;i<lgt;i++) {
+        if(dancers[i].sex=='F')
+            queueF.push(dancers);
+        else
+            queueM.push(dancers);
+    }
+  
+
+    let dequeueM = queueM.shift();
+    let dequeueF = queueF.shift();
+
+    while(dequeueM != null && dequeueF != null) {
+        document.write( " Nombre: " + dequeueM.name + " Sexo: " + dequeueM.sex + " pareja " + " Nombre: " + dequeueF.name + " Sexo: " + dequeueF.sex +'<br');
+        dequeueM = queueM.shift();
+        dequeueF = queueF.shift();
+        if(dequeueF==null)
+                         console.log ( "No hay mas mujeres");
+        else if(dequeueM==null)
+                         console.log ( "No hay mas hombres");
+    }
+ 
+</script>

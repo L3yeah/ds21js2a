@@ -1,0 +1,48 @@
+<script>
+//Lilia Trujillo 2A
+//Linked List ejercicio 3
+
+let head;
+
+class Node {
+			constructor(val) {
+				this.data = val;
+				this.next = null;
+			}
+		}
+
+function conteo() {
+        let cnt = 0,hd = head;
+        while (hd != null) {
+            cnt++;
+            hd = hd.next;
+        }
+        return cnt;
+    }
+
+function del(p, lenght)
+{
+    if (p> lenght){//validacion de entrada
+      	console.log("Nodo invalido");
+        return;}
+    let hd = head;
+    if (p == 0)
+    {
+        head = hd.next;
+        return;
+    }
+    for(i = 0; hd != null && i < p - 1; i++)
+        hd = hd.next;
+    if (hd == null || hd.next == null)
+    return;
+    let next = hd.next.next;
+    hd.next = next;
+}
+ 
+
+head = {"data":3,"next":{"data":2,"next":{"data":1,"next":{"data":9,"next":null}}}};
+
+del(2,conteo());
+console.log(head);
+
+</script>

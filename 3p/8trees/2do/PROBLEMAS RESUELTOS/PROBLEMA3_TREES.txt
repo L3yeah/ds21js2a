@@ -1,0 +1,29 @@
+<script>
+//Lilia Trujillo 2A
+//Trees ejercicio 3
+class Node {
+	constructor(val) {
+		this.key = val;
+		this.left = null;
+		this.right = null;
+	}
+}
+
+function postorder(node) {
+		if (node == null)
+			return;
+  
+		postorder(node.left);
+		postorder(node.right);
+		document.write(node.key + " ");
+	}
+  
+let tree = null;
+		
+tree = new Node(0);
+tree.left = new Node(1);
+tree.right = new Node(2);
+
+document.write("Post orden: <br>");
+postorder(tree);
+</script>

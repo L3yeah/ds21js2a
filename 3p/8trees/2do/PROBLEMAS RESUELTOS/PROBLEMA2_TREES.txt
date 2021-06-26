@@ -1,0 +1,30 @@
+<script>
+//Lilia Trujillo 2A
+//Trees ejercicio 2
+class Node {
+	constructor(val) {
+		this.key = val;
+		this.left = null;
+		this.right = null;
+	}
+}
+
+function inorder(node) {
+		if (node == null)
+			return;
+  
+		inorder(node.left);
+		document.write(node.key + " ");
+		inorder(node.right);
+	}
+  
+let tree = null;
+		
+tree = new Node(0);
+tree.left = new Node(1);
+tree.right = new Node(2);
+
+
+document.write("In order: <br>");
+inorder(tree);
+</script>

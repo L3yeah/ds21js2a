@@ -1,0 +1,9 @@
+<script>
+//Lilia Trujillo 2A
+//Problema 1
+
+let numbers = [ 3, 2, 1,7,5,8,9,6];
+    numbers.splice(3,0,'Número');
+    console.log(numbers)
+    
+</script>

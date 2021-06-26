@@ -1,0 +1,10 @@
+<script>
+//Lilia Trujillo 2A
+//Problema 3
+//Method unshift: add items to the init of an array.
+
+let nums=[1,2,3,4,5,6,7];
+nums.unshift(0);
+  console.log(nums);
+    
+</script>

@@ -1,0 +1,10 @@
+<script>
+//Lilia Trujillo 2A
+//PROBLEMA 4
+//Method pop: deletes the last item of the array.
+
+let nums = [1,2,3,4,5,6,7];
+nums.pop();
+console.log(nums);
+
+</script>

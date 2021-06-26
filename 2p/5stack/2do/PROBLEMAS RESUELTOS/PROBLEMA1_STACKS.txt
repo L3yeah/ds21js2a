@@ -1,0 +1,10 @@
+<script>
+//Lilia Trujillo 2A
+//Problema 1 Stack
+let stack = [];
+
+for(i= 0;i<10;i++){
+stack.push(i);}
+  
+document.write(stack);
+</script>

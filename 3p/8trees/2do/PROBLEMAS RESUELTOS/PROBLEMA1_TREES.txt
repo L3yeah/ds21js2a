@@ -1,0 +1,31 @@
+<script>
+//Lilia Trujillo 2A
+//Trees ejercicio 1
+class Node {
+	constructor(val) {
+		this.key = val;
+		this.left = null;
+		this.right = null;
+	}
+}
+
+function preorder(node) {
+		if (node == null)
+			return;
+
+		document.write(node.key + " ");
+		preorder(node.left);
+		preorder(node.right);
+		
+	}  
+  
+let tree = null;
+		
+tree = new Node(0);
+tree.left = new Node(1);
+tree.right = new Node(2);
+
+
+document.write("Preorden: <br>");
+preorder(tree);
+</script>

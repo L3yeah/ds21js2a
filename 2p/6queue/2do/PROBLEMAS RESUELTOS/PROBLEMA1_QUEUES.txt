@@ -1,0 +1,15 @@
+<script>
+//Lilia Trujillo 2A
+//Ejercicio 1 Queue
+let queue = [];
+  
+for(i=0;i<10;i++){
+queue.push(i);
+}
+
+  
+console.log(queue);
+
+let q = queue.shift();
+console.log(q);
+</script>

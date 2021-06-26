@@ -1,0 +1,27 @@
+<script>
+//Lilia Trujillo 2A
+//Linked List ejercicio 2
+var head;
+
+class Node {
+			constructor(val) {
+				this.data = val;
+				this.next = null;
+			}
+		}
+
+function conteo() {
+        var cnt = 0,hd = head;
+        while (hd != null) {
+            cnt++;
+            hd = hd.next;
+        }
+        return cnt;
+    }
+
+head = {"data":3,"next":{"data":2,"next":{"data":1,"next":{"data":9,"next":null}}}};
+
+  
+console.log(conteo());
+
+</script>
